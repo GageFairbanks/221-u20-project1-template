@@ -1,5 +1,8 @@
 body {
-	
+	background-image: url("/images/campus.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #splash_title {
@@ -24,3 +27,5 @@ body {
     border-radius: 12px;
     padding: 16px 20px;
 }
+
+
