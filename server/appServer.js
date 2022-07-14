@@ -2,6 +2,8 @@ const express = require('express')
 const app = express();
 app.use(express.static('client/public'));
 
+let feedController = require('./Controller/feedController');
+
 app.get('/', function(req, res) {
     res.sendFile('index.html', {root: './client/views'})
 })
