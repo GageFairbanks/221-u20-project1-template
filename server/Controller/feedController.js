@@ -1,16 +1,16 @@
 const user = required("../model/feedItem") 
 console.log('controller running!');
-
+//array for items
 currentStories[0] = new feedItem("Story 1", "This is the body of story 1.", "https://news.google.com/", "images/news_pic.jpg" );
 currentStories[1] = new feedItem("Story 2", "This is the body of story 2.", "http://my.marist.edu", "images/campus.png" );
 currentStories[2] = new feedItem("Story 3", "This is the body of story 3.", "http://my.marist.edu/academics", "images/hancock.jpeg" ); 
 
 let feedItem = [];
-
+//pushes the differnt arrays
 feedItem.push(feedItem1);
 feedItem.push(feedItem2);
 feedItem.push(feedItem3);
-
+//All the exports request and rresopned with data packets and act as functions
 exports.getFeedItem = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(feedItem);
