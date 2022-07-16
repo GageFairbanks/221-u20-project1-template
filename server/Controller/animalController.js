@@ -1,16 +1,16 @@
 const user = required("../model/animalModel") 
 console.log('controller running!');
-
+//arrays for items
 currentStories[0] = new animalModel("Cat", "Small feline with fur.", "Small" );
 currentStories[1] = new animalModel("Dog", "Medium canine with fur.", "Medium" );
 currentStories[2] = new animalModel("Fish", "Small aquatic creature with scales.", "Very small" ); 
 
 let animalModel = [];
-
+//pushes the arrays
 animalModel.push(animalModel1);
 animalModel.push(animalModel2);
 animalModel.push(animalModel3);
-
+//all the exports send a request different data packets and act as different functions
 exports.getAnimalModel = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
     res.send(animalModel);
